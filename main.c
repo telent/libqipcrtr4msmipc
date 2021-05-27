@@ -16,18 +16,19 @@
  * You should have received a copy of the GNU General Public License
  * along with libqipcrtr4msmipc.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 #define _GNU_SOURCE
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <linux/msm_ipc.h>
-#include <linux/qrtr.h>
-
+#include <stdint.h>
 #include <dlfcn.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/ioctl.h>
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <linux/msm_ipc.h>
+#include <linux/qrtr.h>
+
 
 #define IPC_ROUTER_NID_LOCAL            1 /* from ipc_router.h in MSM kernel fork */
 
